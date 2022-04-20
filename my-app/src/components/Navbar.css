@@ -18,14 +18,35 @@ body{
     margin-top: 1%;
 }
 #container1 p{
-    margin-right: 30px;
+    /* margin-right: 30px; */
     font-size: 16px;
     margin-top: 30px;
+}
+#container1 .pre-menu1 img{
+    width: 170px;
+    height: 50px;
+}
+.pre-menu1{
+    display: none;
+}
+#container1 .main-menu:hover{
+    color: #f43397;
+}
+#container1 .main-menu:hover .pre-menu1{
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    margin-top: 15px;
 }
 #container1_1{
     display: flex;
     justify-content: space-around;
     border: 1px solid black;
+}
+#container1_1>p:hover{
+    color: #f43397;
+    cursor: pointer;
 }
 
 
