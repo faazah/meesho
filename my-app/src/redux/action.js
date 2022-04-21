@@ -15,3 +15,11 @@ export const handleError = () =>({
     type: IS_ERROR,
 
 })
+
+export const getData = () =>(dispatch) =>{
+    dispatch(handleLoading());
+    fetch("http://localhost:3001/products")
+    .then((res) => res.json())
+    .then((response) => dispatch(storeData(response)))
+    .catch((err) => dispatch(handleError()));
+}

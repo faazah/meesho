@@ -1,0 +1,89 @@
+.container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 1.2%;
+    flex-wrap: wrap;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.heading{
+    width: 25%;
+    height: 100px;
+    margin-left: 5.5%;
+}
+.heading > p{
+    margin: -2% 0% 0% 8%;
+}
+.dataDiv{
+    border: 1px solid whitesmoke;
+    width: 23.7%;
+    height: 550px;
+    margin-bottom: 2%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    cursor: pointer;
+}
+.dataDiv > div > p{
+    color: darkgray;
+    margin-left: 5%;
+}
+.priceDiv{
+    width: 65%;
+    display: flex;
+    gap: 5%;
+    margin-left: 5%;
+}
+.priceDiv > p{
+    color: darkgrey;
+    text-decoration: line-through;
+    margin-top: -1%;
+}
+.priceDiv > h2{
+    margin-top: -3%;
+}
+#discount{
+    text-decoration: none;
+    color: #096d56;
+    font-weight: 500;
+}
+#staticDiscount{
+    margin-top: -3%;
+    color: #8b7777;
+}
+#free{
+    color: #8b7777;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.imgDiv{
+    border: 1px solid whitesmoke;
+    border-radius: 7px;
+    min-height: 57%;
+}
+.ratingDiv{
+    width: 55%;
+    height: 8%;
+    margin-left: 5%;
+    display: flex;
+}
+.ratingDiv > div {
+    border: 1px solid whitesmoke;
+    width: 35%;
+    height: 60%;
+    border-radius: 20px;
+    display: flex;
+    gap : 5%;
+}
+.ratingDiv > p{
+    margin-top: 4%;
+    font-size: 0.8rem;
+}
+.ratingDiv > div > p{
+    margin-top: 2.5%;
+    margin-left: 15%;
+}
+.pageDiv{
+    width: 31%;
+    margin: auto;
+}
