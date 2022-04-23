@@ -1,0 +1,79 @@
+.container1{
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    gap: 2%;
+    margin-top: 5%;
+}
+#div1{
+    border: 1px solid #f43397;
+    height: 52px;
+    width: 50px;
+    border-radius: 4px;
+    margin-top: 2%;
+}
+#div2{
+    border-bottom: 1px solid rgb(228, 222, 222);
+    width: 40%;
+    height: 95%;
+    border-radius: 4px;
+}
+#div3{
+    border: 1px solid rgb(228, 222, 222);
+    width: 50%;
+    height: 36%;
+    border-radius: 4px;
+}
+#div2 > div {
+    height: 82%;
+    border: 1px solid whitesmoke;
+    width: 99%;
+    border-radius: 4px;
+}
+#addTocartBtn{
+    border: none;
+    width: 99%;
+    height: 9%;
+    border-radius: 5px;
+    background-color: #f43397;
+    margin-top: 5%;
+    color: white;
+    font-size: 1.1rem;
+}
+#div3 > p{
+    color: #c3b9a6;
+}
+.ratingDiv2{
+    width: 38%;
+    height: 20%;
+    margin-left: 4%;
+    display: flex;
+    gap: 4%;
+}
+.ratingDiv2 > p{
+    margin-top: 2%;
+    font-size: 0.8rem;
+    color: #999999;
+}
+.ratingDiv2 > div{
+    border: 1px solid whitesmoke;
+    width: 27%;
+    height: 60%;
+    border-radius: 20px;
+    display: flex;
+    gap : 8%;
+    background-color: teal;
+}
+.ratingDiv2 > div > p{
+    margin: -1% 0% 0% 15%;
+    color: white;
+}
+#staticDiscount2{
+    color: #999999 !important;
+    margin: 1% 0% 0% 4%;
+}
+#free2{
+    color: #999999 !important;
+    margin: 1% 0% 0% 4%;
+}

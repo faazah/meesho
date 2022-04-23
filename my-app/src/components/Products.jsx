@@ -3,10 +3,12 @@ import "./Products.css";
 import { AiFillStar } from "react-icons/ai";
 import { Pagination } from '@mui/material';
 import { Navbar } from "./Navbar";
+import { useNavigate } from "react-router-dom";
 
 export const Products = () => {
     const [data, setData] = useState([]);
     const [page, setPage] = useState(1);
+    let navigate = useNavigate();
     useEffect(() => {
         getData(page);
     }, [page])
@@ -18,6 +20,9 @@ export const Products = () => {
     const handleChange = (e, val) => {
         setPage(val);
     }
+    const handleClick = (val) => {
+       navigate(`/products/${val}`);
+    }
     return (<>
         <Navbar/>
     <div className="heading">
@@ -27,7 +32,7 @@ export const Products = () => {
     <div className="container">
         {data.map((e, i) => {
             return (<>
-            <div className="dataDiv" key={i}>
+            <div className="dataDiv" key={i} onClick={() => handleClick(e.id)}>
                 <div className="imgDiv" style={{backgroundImage : `url(${e.image_url})`, backgroundSize:"cover"}}>
                 </div>
                 <div>
