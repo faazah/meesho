@@ -1,7 +1,7 @@
 .container1{
     display: flex;
     justify-content: space-around;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .container1_1{
     border: 1px solid black;
@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 .container2{
-    border: 1 px solid black;
+    /* border: 1 px solid black; */
     width: 200px;
 }
 .container2_1{

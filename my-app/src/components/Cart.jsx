@@ -34,7 +34,7 @@ export const Cart = () =>{
                         return (
                             <div className="container1_1">
                                 <div>
-                                    <img src={item.image_url} height="120px" width="120px" border="1px solid black" />
+                                    <img src={item.image_url} height="120px" width="120px" />
                                 </div>
                                 <div>
                                     <h5>{item.name}</h5>
