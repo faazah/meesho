@@ -19,7 +19,7 @@ export const SpecificProduct = () => {
         });
     }
     const goToCart = () =>{
-        fetch("http://localhost:3001/cart",{
+        fetch("https://fez-dbjson.herokuapp.com/cart",{
             method: "POST",
             body: JSON.stringify(product[0]),
             headers: {
