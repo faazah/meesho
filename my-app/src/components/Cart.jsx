@@ -9,13 +9,13 @@ export const Cart = () =>{
         getCartData();
     },[])
     const getCartData = () =>{
-        fetch("http://localhost:3001/cart")
+        fetch("https://fez-dbjson.herokuapp.com/cart")
         .then((res) => res.json())
         .then((data) => setCartData(data));
     }
 
     const deleteItem = (id) =>{
-        fetch(`http://localhost:3001/cart/${id}`, {
+        fetch(`https://fez-dbjson.herokuapp.com/cart/${id}`, {
         method: "DELETE",
         }).then(() => console.log("deleted"))
 

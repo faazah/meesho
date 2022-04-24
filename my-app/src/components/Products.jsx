@@ -13,7 +13,7 @@ export const Products = () => {
         getData(page);
     }, [page])
     const getData = (page = 1) => {
-        fetch(`http://localhost:3001/products?_page=${page}&_limit=8`).then((res) => res.json()).then((d) => {
+        fetch(`https://fez-dbjson.herokuapp.com/products?_page=${page}&_limit=8`).then((res) => res.json()).then((d) => {
             setData(d);
         });
     }

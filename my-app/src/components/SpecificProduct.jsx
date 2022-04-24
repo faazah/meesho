@@ -14,7 +14,7 @@ export const SpecificProduct = () => {
         getData();
     },[]);
     const getData = () => {
-        fetch(`http://localhost:3001/products?id=${id}`).then((res) => res.json()).then((d) => {
+        fetch(`https://fez-dbjson.herokuapp.com/products?id=${id}`).then((res) => res.json()).then((d) => {
             setProduct(d);
         });
     }
